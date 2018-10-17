@@ -72,11 +72,59 @@ nav ul li a:hover{
 }
 
 
-.dp{
+/* .dp{
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-top: 32vh;
+} */
+
+.dp{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media(max-width:576px){
+  .marginTopdp{
+    margin-top: 30vh;
+  }
+  .marginTopContent{
+    margin-top: 30vh;
+  }
+}
+
+@media(min-width:576px){
+  .marginTopdp{
+    margin-top: 30vh;
+  }
+  .marginTopContent{
+    margin-top: 30vh;
+  }
+}
+@media(min-width:768px){
+  .marginTopdp{
+    margin-top: 30vh;
+  }
+  .marginTopContent{
+    margin-top: 30vh;
+  }
+}
+@media(min-width:992px){
+  .marginTopdp{
+    margin-top: 30vh;
+  }
+  .marginTopContent{
+    margin-top: 1vh;
+  }
+}
+@media(min-width:1200px){
+  .marginTopdp{
+    margin-top: 30vh;
+  }
+  .marginTopContent{
+    margin-top: 1vh;
+  }
 }
 
 
