@@ -15,24 +15,20 @@
 
 <body ng-app="myProfile" ng-controller="main.ctrl">
 
+  <header>
+    <nav>
+      <ul id="navbarMenu">
+        <li ng-click="goto('home')" id="home"><a href="#">Home</a></li>
+        <li id="about"><a href="#">About</a></li>
+        <!-- <li id="resume"><a href="#">Resume</a></li> -->
+        <li id="work"><a href="#">Work</a></li>
+        <li id="contact"><a href="#">Contact</a></li>
+      </ul>
+      <span id="topLine" class="topLine"></span>
+    </nav>
+  </header>
 
- 
-
-
-    <header>
-      <nav>
-        <ul id="navbarMenu">
-          <li ng-click="goto('home')" id="home"><a href="#">Home</a></li>
-          <li id="about"><a href="#">About</a></li>
-          <!-- <li id="resume"><a href="#">Resume</a></li> -->
-          <li id="work"><a href="#">Work</a></li>
-          <li id="contact"><a href="#">Contact</a></li>
-        </ul>
-        <span id="topLine" class="topLine"></span>
-      </nav>
-    </header>
-
- <div class="container-fluid">
+  <div class="container-fluid">
 
     <div class="row home">
       <div class="centerDiv">
