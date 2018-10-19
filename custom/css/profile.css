@@ -79,10 +79,29 @@ nav ul li a:hover{
   margin-top: 32vh;
 } */
 
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .dp{
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @media(max-width:576px){
@@ -134,19 +153,28 @@ nav ul li a:hover{
   font-family: 'Gloria Hallelujah', cursive;
   margin : 0px;
   margin-top: 15px;
+  animation-name: fadeIn;
+  animation-duration: 4s;
   /* transform: rotate(-10deg); */
 }
+
+
+
 
 .designation{
   color: #fff;
   font-size: 25px;
   font-family: 'Gloria Hallelujah', cursive;
   margin: 0px;
+  animation-name: fadeIn;
+  animation-duration: 6s;
 }
 
 .linkIcons ul{
   list-style: none;
   padding: 0px;
+  animation-name: fadeIn;
+  animation-duration: 6s;
 }
 
 .linkIcons ul li{
