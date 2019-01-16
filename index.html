@@ -2,82 +2,39 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vikas Motla - Web Developer</title>
-  <link rel="stylesheet" href="custom/css/profile.css">
-  <link rel="stylesheet" href="static/bootstrap-3.3.7/css/bootstrap.css">
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!-- <link rel="shortcut icon" type="image/png" href="custom/images/Allow.png"/> -->
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json"> -->
+  <link rel="stylesheet" href="custom/css/hello.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Spectral+SC" rel="stylesheet">
+
+  <title>Vikas Motla - Portfolio</title>
 </head>
 
-<body ng-app="myProfile" ng-controller="main.ctrl">
-
-  <header>
-    <nav>
-      <ul id="navbarMenu">
-        <li ng-click="goto('home')" id="home"><a href="#">Home</a></li>
-        <li id="about"><a href="#">About</a></li>
-        <!-- <li id="resume"><a href="#">Resume</a></li> -->
-        <li id="work"><a href="#">Work</a></li>
-        <li id="contact"><a href="#">Contact</a></li>
-      </ul>
-      <span id="topLine" class="topLine"></span>
-    </nav>
-  </header>
-
-  <div class="container-fluid">
-
-    <div class="row home">
-      <div class="col-md-12 col-xs-5 marginTopdp">
-        <div class="row text-center">
-          <img class="dp" src="custom/images/vikas44.jpeg" alt="vikas motla">
-          <!-- <svg>
-           <g transform="translate(0 -32.417)">
-            <path class="path" d="m48.381 188.14 19.655-39.31 6.8036 15.875 12.095-18.143 26.458 52.917-0.75596-0.75595"
-             fill="none" stroke="#fff" stroke-width="1.7198"/>
-           </g>
-        </svg> -->
-        </div>
+<body>
+  <div>
+    <div class="Header">
+      <div class="HeaderContent">
+        <p class="Content">
+          Hello, I'm <span class="Name"> Vikas Motla</span>. <br/>
+        I'm a front end developer.
+        </p>
+          <div class="Explore">Explore</div>
       </div>
-      <div class="col-md-12 col-xs-4 marginTopContent">
-        <div class="row text-center">
-          <p class="name">Vikas Motla</p>
-          <p class="designation"> Web Developer </p>
-          <span class="linkIcons">
-          <ul>
-            <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
-            <li> <a href="#"><i class="fab fa-linkedin"></i><a> </li>
-            <li> <a href="#"><i class="fab fa-facebook-square"></i></a> </li>
-          </ul>
-        </span>
-        </div>
-      </div>
-
-
-      <!-- <div class="centerDiv">
-        <img class="dp" src="custom/images/vikas44.jpeg" alt="vikas motla">
-        <p class="name">Vikas Motla</p>
-        <p class="designation"> Web Developer </p>
-        <span class="linkIcons">
-        <ul>
-          <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
-          <li> <a href="#"><i class="fab fa-linkedin"></i><a> </li>
-          <li> <a href="#"><i class="fab fa-facebook-square"></i></a> </li>
-        </ul>
-      </span>
-      </div> -->
-
+      <canvas id="myCanvas" width="300" height="300"></canvas>
     </div>
 
-    <div class="row aboutDiv">
-      <div style="margin-top:60px">
-        <div class="col-md-offset-2 col-md-2 col-xs-12">
+    <div class="aboutDiv">
+      <div class="flex">
+        <div class="flex30">
           <span class="sideHeading">About</span>
         </div>
-        <div class="col-xs-12 col-md-8" style="margin-top:50px;">
+        <div class="flex70" style="margin-top:50px;">
           <p class="aboutMeFirst"> Hello! My name is Vikas Motla.</p>
 
           <p class="aboutMeSecond">I am from Meerut (U.P.). Being a Fauzi kid i have been to many places in my life.
@@ -86,95 +43,66 @@
           </p>
         </div>
       </div>
-      <div style="padding-top:30px;">
-        <div class="col-md-offset-2 col-md-2 col-xs-12" style="margin-top:50px;">
+
+      <div class="flex">
+        <div class="flex30">
           <span class="sideHeading">Skills</span>
         </div>
-        <div class="col-xs-12 col-md-8" style="margin-top:100px;">
-          <p class="aboutMeFirst">Angularjs, Bootstrap, Django, C, Javascript, HTML, CSS </p>
+        <div class="flex70" style="margin-top:50px;">
+          <p class="aboutMeFirst">Frameworks/Libraries: </p>
+          <p style="padding-left:20px;" class="aboutMeSecond">Django, AngularJs, Bootstrap, Fabricjs, ReactJs(basics)</p>
+
+          <p class="aboutMeFirst">Programming Languages: </p>
+          <p style="padding-left:20px;" class="aboutMeSecond">Javascript, C, Java, Python (basics), HTML, CSS </p>
         </div>
       </div>
+
+
     </div>
 
-    <div class="row workDiv">
-      <div style="margin-top:60px">
-        <div class="col-md-offset-2 col-md-2 col-xs-12">
-          <span class="sideHeading">Work</span>
+
+
+    <div class="workDiv">
+    <div class="flex">
+      <div class="flex30">
+        <span class="sideHeading">Work</span>
+      </div>
+      <div class="flex70" style="margin-top:50px;">
+        <div class="">
+          <p class="wrokH1">Cioc pvt ltd</p>
+          <p class="workSub">Web Developer - Sep 2017 to Present</p>
         </div>
-        <div class="col-xs-12 col-md-8" style="margin-top:50px;">
-          <div class="row container-fluid">
-            <p class="wrokH1">Cioc pvt ltd</p>
-            <p class="workSub">Web Developer - Feb 2018 to Present</p>
-          </div>
-          <div class="row container-fluid workPoints" style="font-size:15px;">
-            <ul>
-              <li>Designed and developed Web Applications for internal teams on django and angularjs framework.</li>
-              <li>Built 24Tutors a Web Application for online live tutoring.</li>
-              <li>Design and developed Yommillio, web application for business owner's
-                to connect, chat and buy or sell products online. Look and feel is same as of facebook.</li>
-              <li>Performed key role in the designing graphs using canvas, fabric js library for AIBA, to display buisness numbers.</li>
-              <li>Syrow - ongoing, developing customer support web application including real
-                time chat (autobahn js), video and audio(WebRTC) support.</li>
-              <li>Sterling Select ( <a href="https://sterlingselect.in/"  target="_blank" > https://sterlingselect.in/</a>) - ongoing, developing e-commerce web application using angularjs and django framework.</li>
-            </ul>
-          </div>
-          <div class="row container-fluid">
-            <p class="wrokH1">Projects</p>
-            <p class="workSub">College - Jan 2017 to Apr 2017</p>
-          </div>
-          <div class="row container-fluid">
-            <ul>
-              <li>Cost-Effective Authentic and Anonymous Data Sharing with Forward Security <br> <br>
-            In this project, we are using Identity-based (ID-based) ring signature, which eliminates the process of certificate verification. <br>
-             We further enhance the security of ID-based ring signature by providing forward security. </li>
-            </ul>
-          </div>
+        <div class="workPoints" style="font-size:15px;">
+          <ul>
+            <li>Designed and developed Web Applications for internal teams on django and angularjs framework.</li>
+            <li>Built <a style="color:#E31B6D" href="https://24tutors.com/" target="_blank">24Tutors</a>  a Web Application for online live tutoring.  </li>
+            <li>Design and developed Yommillio, web application for business owner's
+              to connect, chat and buy or sell products online. Look and feel is same as of facebook.</li>
+            <li>Performed key role in the designing graphs using canvas, fabric js library for AIBA, to display buisness numbers.</li>
+            <li> <a style="color:#E31B6D" href="https://www.syrow.com/" target="_blank">Syrow</a> - ongoing, developing customer support web application including real
+              time chat (autobahn js), video and audio(WebRTC) support.</li>
+            <li> <a style="color:#E31B6D" href="https://sterlingselect.in/" target="_blank">Sterling Select</a> - ongoing, developing e-commerce web application using angularjs and django framework.</li>
+          </ul>
         </div>
+
       </div>
     </div>
+  </div>
 
-    <div class="row contactDiv">
-      <div style="margin-top:60px">
-        <div class="col-xs-offset-2 col-xs-2">
-          <span class="sideHeading">Contact</span>
-        </div>
-        <div class="col-xs-7" style="margin-top:50px;">
-          <div class="row container-fluid">
-
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label class="control-label col-sm-2" for="email">Email:</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-              </div>
-                </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-2" for="pwd">Message:</label>
-                  <div class="col-sm-10">
-                    <textarea type="text" style="resize:none;" class="form-control" id="txt" placeholder="Enter Message" name="pwd"></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-default" style="background-color:#2B2B2B; color:#fff;">Submit</button>
-                  </div>
-                </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12" >
-        <h3>This portfolio is still under process....</h3>
-      </div>
+  <div class="construction">
+    <div class="consDiv">
+      <img src="custom/images/under-construction.svg" alt="">
+      <h2>This Portfolio is under construction...</h2>
     </div>
 
   </div>
 
-</body>
 
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="static/js/angular.min.js"></script>
-<script src="static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-<script src="custom/js/angularMain.js"></script>
+
+
+  </div>
+
+</body>
+<script src="custom/Canvas/Canvas.js"></script>
 
 </html>
