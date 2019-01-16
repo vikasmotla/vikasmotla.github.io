@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family:'Raleway',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow-y: hidden; */
+}
+
+
+html{
+  font-size: 10px;
+}
+
+
+.Header {
+  width: 100%;
+  height: 100vh;
+  background-color: #252934;
+}
+
+
+.HeaderContent {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+}
+
+.Explore {
+  color: #fff;
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 5px;
+  border-radius: 5px;
+  padding: 15px 20px;
+  width: 100px;
+  border: 1px solid #fff;
+  animation: slideRight 1s;
+  cursor: pointer;
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.Explore:hover{
+  border: 1px solid #04C2C9;
+  background-color: #04C2C9;
+  letter-spacing: 10px;
+  width: 150px;
+}
+
+.Name {
+  color: #E31B6D;
+  font-weight: bold;
+  font-family: 'Raleway-semibold';
+}
+
+.Content{
+  color: #fff;
+  margin-top: 40px;
+  font-size: 40px;
+  letter-spacing: 4px;
+  animation: slideLeft 1s;
+}
+
+.aboutDiv{
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.sideHeading{
+  font-size: 25px;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #E31B6D;;
+  color: #04C2C9
+}
+
+.aboutMeFirst{
+  font-size: 20px;
+  color: #2B2B2B;
+}
+
+.aboutMeSecond{
+  font-size: 17px;
+  color: #2B2B2B;
+}
+
+.flex{
+  display: flex;
+  margin: 50px 100px 0px 100px;
+  /* flex-direction: row; */
+}
+
+.flex30 {
+  text-align: center;
+  width:30%;
+}
+
+.flex70 {
+  width:70%;
+}
+
+
+.workDiv {
+  height: 100vh;
+  width: 100%;
+  background-color: #252934;
+  color:#fff;
+  padding-top: 50px;
+}
+
+.wrokH1{
+  text-transform: uppercase;
+  font-size: 22px;
+  /* font-weight: bold; */
+}
+
+.workSub{
+  /* text-transform: uppercase; */
+  font-size: 17px;
+}
+
+.workPoints ul li{
+  padding: 7px 0px;
+}
+
+.construction{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.consDiv{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.consDiv h2{
+  font-size: 40px;
+  letter-spacing: 5px;
+  color:#E31B6D;
+}
+
+.consDiv img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .flex{
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30px 20px 0px 20px;
+  }
+
+  .consDiv h2{
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .consDiv img{
+    width: 100%;
+  }
+
+  .flex30 {
+    text-align: center;
+    width:100%;
+  }
+
+  .flex70 {
+    width:100%;
+  }
+
+  .workDiv {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .aboutDiv{
+    height: auto;
+  }
+
+}
+
+@keyframes slideLeft {
+  0%{
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(-20px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+    transform: translateX(20px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
